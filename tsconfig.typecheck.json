@@ -1,0 +1,6 @@
+{
+  "exclude": ["**/coverage", "**/dist", "**/node_modules"],
+  "extends": "./tsconfig.json",
+  "files": ["__tests__/setup/index.d.mts", "vitest-env.d.ts"],
+  "include": ["__tests__/**/**.ts", "src/**/**.ts", "src/**/.*.ts"]
+}
