@@ -43,7 +43,15 @@ yarn add -D @flex-development/unist-util-types @types/unist
 
 ## Use
 
-**TODO**: use
+```ts
+import type {
+  Ancestor,
+  Children,
+  InclusiveDescendant,
+  Parents,
+  PositionalInfo
+} from '@flex-development/unist-util-types'
+```
 
 ## API
 
