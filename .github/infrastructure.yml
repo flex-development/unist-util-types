@@ -160,7 +160,7 @@ repository:
   automated_security_fixes: true
   default_branch: main
   delete_branch_on_merge: true
-  description: TypeScript definitions for working with unist syntax trees
+  description: unist utility types
   has_issues: true
   has_projects: true
   has_wiki: false
