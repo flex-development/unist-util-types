@@ -17,8 +17,8 @@ import type Uint from './uint'
  * @see {@linkcode Uint}
  *
  * @template {Node} Tree - Tree to collect descendants from
- * @template {Uint} Max - Maximum tree depth
- * @template {Uint} Depth - Current tree depth
+ * @template {Uint} [Max=10] - Maximum search depth
+ * @template {Uint} [Depth=0] - Current search depth
  */
 // dprint-ignore
 type InclusiveDescendant<
