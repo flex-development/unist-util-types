@@ -21,7 +21,7 @@ import type IsParent from './is-parent'
  * @see {@linkcode Node}
  *
  * @template {Node} Tree - Tree to collect parents from
- * @template {Node} [Child=any] - Child to search for
+ * @template {Node} [Child=any] - Expected child node
  */
 type Parents<
   Tree extends Node,

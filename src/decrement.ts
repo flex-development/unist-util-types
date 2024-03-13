@@ -19,7 +19,7 @@ import type Uint from './uint'
  * @example
  *  type X = Decrement<0> // 0
  *
- * @template {Uint} [N=10] - Current number
+ * @template {Uint} [N=10] - Number to subtract from
  */
 // dprint-ignore
 type Decrement<N extends Uint = 10> = N extends 10

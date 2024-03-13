@@ -20,7 +20,7 @@ import type { Node, Parent } from 'unist'
  *  type X = IsParent<mdast.Heading, mdast.Blockquote> // never
  *
  * @template {Node} Tree - Tree to check
- * @template {Node} Child - Child to search for
+ * @template {Node} Child - Expected child node
  */
 // dprint-ignore
 type IsParent<Tree extends Node, Child extends Node> = Tree extends Parent

@@ -9,7 +9,7 @@ import type IsParent from './is-parent'
 import type Uint from './uint'
 
 /**
- * Check if [`Tree`][1] is the [*ancestor*][2] of [`Child`][3].
+ * Check if [`Tree`][1] is an [*ancestor*][2] of [`Child`][3].
  *
  * [1]: https://github.com/syntax-tree/unist#tree
  * [2]: https://github.com/syntax-tree/unist#ancestor
@@ -24,7 +24,7 @@ import type Uint from './uint'
  *  type X = IsAncestor<mdast.List, mdast.Code> // never
  *
  * @template {Node} Tree - Tree to check
- * @template {Node} Child - Child to search for
+ * @template {Node} Child - Expected child node
  * @template {Uint} [Max=10] - Maximum search depth
  * @template {Uint} [Depth=0] - Current search depth
  */
