@@ -619,13 +619,7 @@ const config = {
         'node/no-unpublished-require': 0,
         'node/no-unsupported-features/es-builtins': 2,
         'node/no-unsupported-features/es-syntax': 0,
-        'node/no-unsupported-features/node-builtins': [
-          2,
-          {
-            version: require('./package.json').engines?.node ??
-              '>=' + fs.readFileSync('.nvmrc', 'utf8')
-          }
-        ],
+        'node/no-unsupported-features/node-builtins': 2,
         'node/prefer-global/buffer': 2,
         'node/prefer-global/console': 2,
         'node/prefer-global/process': 2,
@@ -916,6 +910,68 @@ const config = {
       files: '**/*.+(cjs|js|mjs)',
       rules: {
         '@typescript-eslint/explicit-member-accessibility': 0
+      }
+    },
+    {
+      files: ['**/*.html'],
+      parser: '@html-eslint/parser',
+      plugins: ['@html-eslint', 'html'],
+      rules: {
+        '@html-eslint/element-newline': 2,
+        '@html-eslint/id-naming-convention': 2,
+        '@html-eslint/indent': [2, 2],
+        '@html-eslint/lowercase': 2,
+        '@html-eslint/no-abstract-roles': 2,
+        '@html-eslint/no-accesskey-attrs': 2,
+        '@html-eslint/no-aria-hidden-body': 2,
+        '@html-eslint/no-duplicate-attrs': 2,
+        '@html-eslint/no-duplicate-id': 2,
+        '@html-eslint/no-extra-spacing-attrs': 2,
+        '@html-eslint/no-inline-styles': 2,
+        '@html-eslint/no-multiple-empty-lines': 2,
+        '@html-eslint/no-multiple-h1': 2,
+        '@html-eslint/no-non-scalable-viewport': 2,
+        '@html-eslint/no-obsolete-tags': 2,
+        '@html-eslint/no-positive-tabindex': 2,
+        '@html-eslint/no-restricted-attr-values': [
+          2,
+          {
+            attrPatterns: [],
+            attrValuePatterns: []
+          }
+        ],
+        '@html-eslint/no-restricted-attrs': [
+          2,
+          {
+            attrPatterns: [],
+            tagPatterns: []
+          }
+        ],
+        '@html-eslint/no-script-style-type': 2,
+        '@html-eslint/no-skip-heading-levels': 2,
+        '@html-eslint/no-target-blank': 2,
+        '@html-eslint/no-trailing-spaces': 2,
+        '@html-eslint/quotes': 2,
+        '@html-eslint/require-attrs': [2],
+        '@html-eslint/require-button-type': 2,
+        '@html-eslint/require-closing-tags': [2, { selfClosing: 'always' }],
+        '@html-eslint/require-doctype': 2,
+        '@html-eslint/require-frame-title': 2,
+        '@html-eslint/require-img-alt': 2,
+        '@html-eslint/require-lang': 2,
+        '@html-eslint/require-li-container': 2,
+        '@html-eslint/require-meta-charset': 2,
+        '@html-eslint/require-meta-description': 2,
+        '@html-eslint/require-meta-viewport': 2,
+        '@html-eslint/require-open-graph-protocol': 0,
+        '@html-eslint/require-title': 2,
+        '@html-eslint/sort-attrs': 2
+      },
+      settings: {
+        html: {
+          extensions: ['.html'],
+          indent: '+2'
+        }
       }
     },
     {
