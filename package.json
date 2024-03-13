@@ -1,6 +1,6 @@
 {
   "name": "@flex-development/unist-util-types",
-  "description": "TypeScript definitions for working with unist syntax trees",
+  "description": "unist utility types",
   "version": "0.0.1",
   "keywords": [
     "ast",

@@ -9,7 +9,7 @@
 [![vitest](https://img.shields.io/badge/-vitest-6e9f18?style=flat&logo=vitest&logoColor=ffffff)](https://vitest.dev/)
 [![yarn](https://img.shields.io/badge/-yarn-2c8ebb?style=flat&logo=yarn&logoColor=ffffff)](https://yarnpkg.com/)
 
-[TypeScript][typescript] definitions for working with [unist][unist] syntax trees
+[unist][unist] utility types
 
 ## Contents
 
@@ -21,7 +21,8 @@
 
 ## What is this?
 
-**TODO**: what is this?
+This package contains [TypeScript][typescript] definitions for working with [unist][unist] and its [ecosystem of
+utilities][unist-utilities].
 
 ## Install
 
@@ -30,7 +31,7 @@ This package is [ESM only][esm].
 In Node.js (version 18+) with [yarn][yarn]:
 
 ```sh
-yarn add @flex-development/unist-util-types @types/unist
+yarn add -D @flex-development/unist-util-types @types/unist
 ```
 
 <blockquote>
@@ -52,7 +53,11 @@ yarn add @flex-development/unist-util-types @types/unist
 
 See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
+This project has a [code of conduct](CODE_OF_CONDUCT.md). By interacting with this repository, organization, or
+community you agree to abide by its terms.
+
 [esm]: https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c
 [typescript]: https://www.typescriptlang.org
+[unist-utilities]: https://github.com/syntax-tree/unist#list-of-utilities
 [unist]: https://github.com/syntax-tree/unist
 [yarn]: https://yarnpkg.com
