@@ -22,6 +22,7 @@
   - [`Decrement<[N]>`](#decrementn)
   - [`InclusiveDescendant<Tree[, Max][, Depth]>`](#inclusivedescendanttree-max-depth)
   - [`Increment<[N]>`](#incrementn)
+  - [`Index`](#index)
   - [`IsAncestor<Tree, Child[, Max][, Depth]>`](#isancestortree-child-max-depth)
   - [`IsParent<Tree, Child>`](#isparenttree-child)
   - [`Parents<Tree[, Child]>`](#parentstree-child)
@@ -112,6 +113,12 @@ Add `1` to `N` while `N` is in the range `[0, 9]`.
 
 > **source**: [`src/increment.ts`](src/increment.ts)
 
+### `Index`
+
+Number of preceding [*siblings*][siblings] of a [*child*][child] node.
+
+> **source**: [`src/index-number.ts`](src/index-number.ts)
+
 ### `IsAncestor<Tree, Child[, Max][, Depth]>`
 
 Check if [`Tree`][tree] is an [*ancestor*][ancestor] of [`Child`][child].
@@ -177,6 +184,7 @@ community you agree to abide by its terms.
 [node]: https://github.com/syntax-tree/unist#node
 [parent]: https://github.com/syntax-tree/unist#parent
 [positional-information]: https://github.com/syntax-tree/unist#positional-information
+[siblings]: https://github.com/syntax-tree/unist#sibling
 [tree]: https://github.com/syntax-tree/unist#tree
 [typescript]: https://www.typescriptlang.org
 [unist-utilities]: https://github.com/syntax-tree/unist#list-of-utilities
