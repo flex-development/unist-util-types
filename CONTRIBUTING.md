@@ -200,7 +200,7 @@ e.g:
 - `build(deps-dev): bump cspell from 6.7.0 to 6.8.0`
 - `perf: lighten initial load`
 
-See [`.commitlintrc.cts`](.commitlintrc.cts) to view all commit guidelines.
+See [`.commitlintrc.ts`](.commitlintrc.ts) to view all commit guidelines.
 
 ### Code Style
 
