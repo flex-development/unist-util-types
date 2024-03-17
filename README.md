@@ -27,6 +27,9 @@
   - [`IsParent<Tree, Child>`](#isparenttree-child)
   - [`Parents<Tree[, Child]>`](#parentstree-child)
   - [`PositionalInfo<[T]>`](#positionalinfot)
+  - [`Test`](#test)
+  - [`TestFunction<[T][, P][, U]>`](#testfunctiont-p-u)
+    - [`fn(node[, index][, parent])`](#fnnode-index-parent)
   - [`Type<[T]>`](#typet)
   - [`Uint`](#uint)
 - [Contribute](#contribute)
@@ -60,8 +63,11 @@ import type {
   Ancestor,
   Children,
   InclusiveDescendant,
+  Index,
   Parents,
   PositionalInfo,
+  Test,
+  TestFunction,
   Type
 } from '@flex-development/unist-util-types'
 ```
@@ -164,6 +170,39 @@ Object containing the [*positional information*][positional-information] of [*tr
 
 > **source**: [`src/positional-info.ts`](src/positional-info.ts)
 
+### `Test`
+
+Union of test types for a [`Node`][node].
+
+See [`unist-util-is`][unist-util-is] for more details.
+
+> **source**: [`src/test.ts`](src/test.ts)
+
+### `TestFunction<[T][, P][, U]>`
+
+Check if a node passes a test.
+
+- `T` ([**`Node`**][node]): node to check
+  - **default**: [`Node`][node]
+- `P` ([**`Parent`**][parent]): [*parent(s)*][parent] of node `T`
+  - **default**: [`Parent`][parent]
+- `U` (**`any`**): `this` context
+  - **default**: `unknown`
+
+#### `fn(node[, index][, parent])`
+
+**Parameters**:
+
+- `node` (**`T`**): node to check
+- `index` (**[`Index`](#index) | `undefined`**): index of `node` in `parent.children`
+- `parent` (**[`Parent`][parent] | `undefined`**): [*parent*][parent] of `node`
+
+**Returns**:
+
+`boolean | undefined | void` test result for `node`
+
+> **source**: [`src/test-function.ts`](src/test-function.ts)
+
 ### `Type<[T]>`
 
 Extract [*type*][type] from [*tree*][tree] `T`.
@@ -199,6 +238,7 @@ community you agree to abide by its terms.
 [tree]: https://github.com/syntax-tree/unist#tree
 [type]: https://github.com/syntax-tree/unist#type
 [typescript]: https://www.typescriptlang.org
+[unist-util-is]: https://github.com/syntax-tree/unist-util-is
 [unist-utilities]: https://github.com/syntax-tree/unist#list-of-utilities
 [unist]: https://github.com/syntax-tree/unist
 [yarn]: https://yarnpkg.com

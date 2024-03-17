@@ -10,7 +10,15 @@
  */
 const config = {
   extends: ['./.eslintrc.base.cjs'],
-  overrides: [...require('./.eslintrc.base.cjs').overrides],
+  overrides: [
+    ...require('./.eslintrc.base.cjs').overrides,
+    {
+      files: ['src/test-function.ts'],
+      rules: {
+        '@typescript-eslint/no-invalid-void-type': 0
+      }
+    }
+  ],
   root: true
 }
 
