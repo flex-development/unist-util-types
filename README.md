@@ -19,12 +19,14 @@
 - [API](#api)
   - [`Ancestor<Tree, Child>`](#ancestortree-child)
   - [`Children<T>`](#childrent)
-  - [`Decrement<[N]>`](#decrementn)
+  - [`Decrement<[I]>`](#decrementi)
   - [`InclusiveDescendant<Tree[, Max][, Depth]>`](#inclusivedescendanttree-max-depth)
-  - [`Increment<[N]>`](#incrementn)
+  - [`Increment<[I]>`](#incrementi)
   - [`Index`](#index)
   - [`IsAncestor<Tree, Child[, Max][, Depth]>`](#isancestortree-child-max-depth)
   - [`IsParent<Tree, Child>`](#isparenttree-child)
+  - [`Match<N, T>`](#matchn-t)
+  - [`MatchInclusiveDescendant<Tree, Check[, Max]>`](#matchinclusivedescendanttree-check-max)
   - [`Parents<Tree[, Child]>`](#parentstree-child)
   - [`PositionalInfo<[T]>`](#positionalinfot)
   - [`Test`](#test)
@@ -64,6 +66,8 @@ import type {
   Children,
   InclusiveDescendant,
   Index,
+  Match,
+  MatchInclusiveDescendant,
   Parents,
   PositionalInfo,
   Test,
@@ -91,11 +95,11 @@ Extract [*children*][child] from [*tree*][tree] `T`.
 
 > **source**: [`src/children.ts`](src/children.ts)
 
-### `Decrement<[N]>`
+### `Decrement<[I]>`
 
-Subtract `1` from `N` while `N` is in the range `[1, 10]`.
+Subtract `1` from `I` while `I` is in the range `[1, 10]`.
 
-- `N` ([**`Uint`**](#uint)): number to subtract from
+- `I` ([**`Uint`**](#uint)): number to subtract from
   - **default**: `10`
 
 > **source**: [`src/decrement.ts`](src/decrement.ts)
@@ -112,11 +116,11 @@ Collect all [*inclusive descendants*][descendant] of [`Tree`][tree].
 
 > **source**: [`src/descendant-inclusive.ts`](src/descendant-inclusive.ts)
 
-### `Increment<[N]>`
+### `Increment<[I]>`
 
-Add `1` to `N` while `N` is in the range `[0, 9]`.
+Add `1` to `I` while `I` is in the range `[0, 9]`.
 
-- `N` ([**`Uint`**](#uint)): number to add to
+- `I` ([**`Uint`**](#uint)): number to add to
   - **default**: `0`
 
 > **source**: [`src/increment.ts`](src/increment.ts)
@@ -148,6 +152,26 @@ Check if [`Tree`][tree] is the [*parent*][parent] of [`Child`][child].
 - `Child` ([**`Node`**][node]): expected [*child*][child] node
 
 > **source**: [`src/is-parent.ts`](src/is-parent.ts)
+
+### `Match<N, T>`
+
+Check if node `N` passes a [test](#test).
+
+- `N` ([**`Node`**][node]): node to check
+- `T` ([**`Test`**](#test)): node test
+
+> **source**: [`src/match.ts`](src/match.ts)
+
+### `MatchInclusiveDescendant<Tree, Check[, Max]>`
+
+Check if [*inclusive descendants*][descendant] of [`Tree`][tree] pass a test.
+
+- `Tree` ([**`Node`**][node]): [*tree*][tree] to check
+- `Check` ([**`Test`**](#test)): node test
+- `Max` ([**`Uint`**](#uint)): maximum search depth
+  - **default**: `10`
+
+> **source**: [`src/src/match-descendant-inclusive.ts`](src/src/match-descendant-inclusive.ts)
 
 ### `Parents<Tree[, Child]>`
 

@@ -11,6 +11,10 @@ export type { default as Increment } from './increment'
 export type { default as Index } from './index-number'
 export type { default as IsAncestor } from './is-ancestor'
 export type { default as IsParent } from './is-parent'
+export type { default as Match } from './match'
+export type {
+  default as MatchInclusiveDescendant
+} from './match-descendant-inclusive'
 export type { default as Parents } from './parents'
 export type { default as PositionalInfo } from './positional-info'
 export type { default as Test } from './test'

@@ -6,7 +6,7 @@
 import type Uint from './uint'
 
 /**
- * Subtract `1` from `N` while `N` is in the range `[1, 10]`.
+ * Subtract `1` from `I` while `I` is in the range `[1, 10]`.
  *
  * @see {@linkcode Uint}
  *
@@ -19,26 +19,26 @@ import type Uint from './uint'
  * @example
  *  type X = Decrement<0> // 0
  *
- * @template {Uint} [N=10] - Number to subtract from
+ * @template {Uint} [I=10] - Number to subtract from
  */
 // dprint-ignore
-type Decrement<N extends Uint = 10> = N extends 10
+type Decrement<I extends Uint = 10> = I extends 10
   ? 9
-  : N extends 9
+  : I extends 9
     ? 8
-    : N extends 8
+    : I extends 8
       ? 7
-      : N extends 7
+      : I extends 7
         ? 6
-        : N extends 6
+        : I extends 6
           ? 5
-          : N extends 5
+          : I extends 5
             ? 4
-            : N extends 4
+            : I extends 4
               ? 3
-              : N extends 3
+              : I extends 3
                 ? 2
-                : N extends 2
+                : I extends 2
                   ? 1
                   : 0
 

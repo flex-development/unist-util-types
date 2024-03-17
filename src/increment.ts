@@ -6,7 +6,7 @@
 import type Uint from './uint'
 
 /**
- * Add `1` to `N` while `N` is in the range `[0, 9]`.
+ * Add `1` to `I` while `I` is in the range `[0, 9]`.
  *
  * @see {@linkcode Increment}
  *
@@ -19,26 +19,26 @@ import type Uint from './uint'
  * @example
  *  type X = Decrement<10> // 10
  *
- * @template {Uint} [N=0] - Current number
+ * @template {Uint} [I=0] - Current number
  */
 // dprint-ignore
-type Increment<N extends Uint = 0> = N extends 0
+type Increment<I extends Uint = 0> = I extends 0
   ? 1
-  : N extends 1
+  : I extends 1
     ? 2
-    : N extends 2
+    : I extends 2
       ? 3
-      : N extends 3
+      : I extends 3
         ? 4
-        : N extends 4
+        : I extends 4
           ? 5
-          : N extends 5
+          : I extends 5
             ? 6
-            : N extends 6
+            : I extends 6
               ? 7
-              : N extends 7
+              : I extends 7
                 ? 8
-                : N extends 8
+                : I extends 8
                   ? 9
                   : 10
 
