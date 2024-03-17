@@ -26,7 +26,8 @@
   - [`IsAncestor<Tree, Child[, Max][, Depth]>`](#isancestortree-child-max-depth)
   - [`IsParent<Tree, Child>`](#isparenttree-child)
   - [`Parents<Tree[, Child]>`](#parentstree-child)
-  - [`PositionalInfo<T>`](#positionalinfot)
+  - [`PositionalInfo<[T]>`](#positionalinfot)
+  - [`Type<[T]>`](#typet)
   - [`Uint`](#uint)
 - [Contribute](#contribute)
 
@@ -60,7 +61,8 @@ import type {
   Children,
   InclusiveDescendant,
   Parents,
-  PositionalInfo
+  PositionalInfo,
+  Type
 } from '@flex-development/unist-util-types'
 ```
 
@@ -79,7 +81,7 @@ Collect nodes in [`Tree`][tree] that can be [*ancestors*][ancestor] of [`Child`]
 
 Extract [*children*][child] from [*tree*][tree] `T`.
 
-- `T` ([**`Node`**][node]): [*tree*][tree] to try extracting children from
+- `T` ([**`Node`**][node]): tree to extract children from
 
 > **source**: [`src/children.ts`](src/children.ts)
 
@@ -155,12 +157,21 @@ All parents will be included in the resulting union if `Child` is `any`.
 
 ### `PositionalInfo<[T]>`
 
-Object containing the [*positional information*][positional-information] of [node][node] `T`.
+Object containing the [*positional information*][positional-information] of [*tree*][tree] `T`.
 
-- `T` ([**`Node`**][node]): node to get positional information from
+- `T` ([**`Node`**][node]): tree to get positional information from
   - **default**: [`Node`][node]
 
 > **source**: [`src/positional-info.ts`](src/positional-info.ts)
+
+### `Type<[T]>`
+
+Extract [*type*][type] from [*tree*][tree] `T`.
+
+- `T` ([**`Node`**][node]): tree to extract type from
+  - **default**: [`Node`][node]
+
+> **source**: [`src/type.ts`](src/type.ts)
 
 ### `Uint`
 
@@ -186,6 +197,7 @@ community you agree to abide by its terms.
 [positional-information]: https://github.com/syntax-tree/unist#positional-information
 [siblings]: https://github.com/syntax-tree/unist#sibling
 [tree]: https://github.com/syntax-tree/unist#tree
+[type]: https://github.com/syntax-tree/unist#type
 [typescript]: https://www.typescriptlang.org
 [unist-utilities]: https://github.com/syntax-tree/unist#list-of-utilities
 [unist]: https://github.com/syntax-tree/unist
