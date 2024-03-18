@@ -1,3 +1,11 @@
+## [1.2.0](https://github.com/flex-development/unist-util-types/compare/1.1.0...1.2.0) (2024-03-17)
+
+### :sparkles: Features
+
+- [[`8270a6e`](https://github.com/flex-development/unist-util-types/commit/8270a6e1c8a085c4b0a102fd6cf9d9d8418e2076)] `Match`, `MatchInclusiveDescendant`
+- [[`85bf244`](https://github.com/flex-development/unist-util-types/commit/85bf2440f16927186c8e74517288c6d26e8651a7)] `Test`, `TestFunction`
+- [[`44293c1`](https://github.com/flex-development/unist-util-types/commit/44293c1ce3ab5e531582068f940dd3ade73beb19)] `Type`
+
 ## [1.1.0](https://github.com/flex-development/unist-util-types/compare/1.0.0...1.1.0) (2024-03-15)
 
 ### :package: Build
@@ -48,6 +56,7 @@
 ### :white_check_mark: Testing
 
 - [[`8b4189d`](https://github.com/flex-development/unist-util-types/commit/8b4189d42a45502218e1d17361ed4b4fcd417068)] [`Decrement`] fix test file name
+
 
 
 
