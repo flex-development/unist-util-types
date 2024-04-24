@@ -1,3 +1,9 @@
+## [1.3.1](https://github.com/flex-development/unist-util-types/compare/1.3.0...1.3.1) (2024-04-24)
+
+### :package: Build
+
+- [[`350f90c`](https://github.com/flex-development/unist-util-types/commit/350f90c5af88c3fb83887b8081cd194ecd463168)] **pkg:** add `types` entry point
+
 ## [1.3.0](https://github.com/flex-development/unist-util-types/compare/1.2.0...1.3.0) (2024-04-24)
 
 ### :package: Build
@@ -110,6 +116,7 @@
 ### :white_check_mark: Testing
 
 - [[`8b4189d`](https://github.com/flex-development/unist-util-types/commit/8b4189d42a45502218e1d17361ed4b4fcd417068)] [`Decrement`] fix test file name
+
 
 
 
