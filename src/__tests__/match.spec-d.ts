@@ -11,6 +11,42 @@ import type TestFunction from '../test-function'
 import type Type from '../type'
 
 describe('unit-d:Match', () => {
+  enum types {
+    blockTag = 'blockTag',
+    blockquote = 'blockquote',
+    break = 'break',
+    code = 'code',
+    comment = 'comment',
+    containerDirective = 'containerDirective',
+    definition = 'definition',
+    delete = 'delete',
+    description = 'description',
+    emphasis = 'emphasis',
+    footnoteDefinition = 'footnoteDefinition',
+    footnoteReference = 'footnoteReference',
+    heading = 'heading',
+    html = 'html',
+    image = 'image',
+    imageReference = 'imageReference',
+    inlineCode = 'inlineCode',
+    inlineTag = 'inlineTag',
+    leafDirective = 'leafDirective',
+    link = 'link',
+    linkReference = 'linkReference',
+    list = 'list',
+    listItem = 'listItem',
+    paragraph = 'paragraph',
+    root = 'root',
+    strong = 'strong',
+    table = 'table',
+    tableCell = 'tableCell',
+    tableRow = 'tableRow',
+    text = 'text',
+    textDirective = 'textDirective',
+    thematicBreak = 'thematicBreak',
+    typeExpression = 'typeExpression'
+  }
+
   describe('T extends (...args: any[]) => any', () => {
     type N = docast.Description | docast.DescriptionContent
 
@@ -36,8 +72,8 @@ describe('unit-d:Match', () => {
       // Arrange
       type T = (
         | docast.BlockTag
-        | Type<docast.TypeExpression>
         | Type<mdast.Code>
+        | types.typeExpression
         | ((v: unknown) => v is mdast.PhrasingContent)
       )[]
       type Expect =
@@ -64,6 +100,15 @@ describe('unit-d:Match', () => {
     it('should extract type constituents of N that extend { type: T }', () => {
       // Arrange
       type T = 'code' | 'inlineCode'
+      type Expect = mdast.Code | mdast.InlineCode
+
+      // Expect
+      expectTypeOf<TestSubject<mdast.Nodes, T>>().toEqualTypeOf<Expect>()
+    })
+
+    it('should extract type constituents of N where T extends Type<N>', () => {
+      // Arrange
+      type T = types.code | types.inlineCode
       type Expect = mdast.Code | mdast.InlineCode
 
       // Expect

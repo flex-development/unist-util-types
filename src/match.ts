@@ -5,6 +5,7 @@
 
 import type { Node } from 'unist'
 import type Test from './test'
+import type Type from './type'
 
 /**
  * Check if node `N` passes `Check`.
@@ -26,7 +27,9 @@ type MatchOne<N extends Node, T extends Test> = // dprint-ignore
       ? N
       : N extends T
         ? N
-        : T extends (...args: any[]) => any
+        : T extends Type<N>
+          ? N
+          : T extends (...args: any[]) => any
             ? T extends (value: any) => value is infer U
               ? U extends N
                 ? U
