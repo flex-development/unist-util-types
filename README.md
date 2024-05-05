@@ -25,6 +25,7 @@
   - [`Index`](#index)
   - [`IsAncestor<Tree, Child[, Max][, Depth]>`](#isancestortree-child-max-depth)
   - [`IsParent<Tree, Child>`](#isparenttree-child)
+  - [`Offset`](#offset)
   - [`Match<N, T>`](#matchn-t)
   - [`MatchInclusiveDescendant<Tree, Check[, Max]>`](#matchinclusivedescendanttree-check-max)
   - [`Parents<Tree[, Child]>`](#parentstree-child)
@@ -66,6 +67,7 @@ import type {
   Children,
   InclusiveDescendant,
   Index,
+  Offset,
   Match,
   MatchInclusiveDescendant,
   Parents,
@@ -173,6 +175,12 @@ Check if [*inclusive descendants*][descendant] of [`Tree`][tree] pass a test.
 
 > **source**: [`src/src/match-descendant-inclusive.ts`](src/src/match-descendant-inclusive.ts)
 
+### `Offset`
+
+Index of a character in a source [*file*][file].
+
+> **source**: [`src/offset.ts`](src/offset.ts)
+
 ### `Parents<Tree[, Child]>`
 
 Collect nodes in [`Tree`][tree] that can be [*parents*][parent] of [`Child`][child].
@@ -255,6 +263,7 @@ community you agree to abide by its terms.
 [child]: https://github.com/syntax-tree/unist#child
 [descendant]: https://github.com/syntax-tree/unist#descendant
 [esm]: https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c
+[file]: https://github.com/syntax-tree/unist#file
 [node]: https://github.com/syntax-tree/unist#node
 [parent]: https://github.com/syntax-tree/unist#parent
 [positional-information]: https://github.com/syntax-tree/unist#positional-information

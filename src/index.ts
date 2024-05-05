@@ -15,6 +15,7 @@ export type { default as Match } from './match'
 export type {
   default as MatchInclusiveDescendant
 } from './match-descendant-inclusive'
+export type { default as Offset } from './offset'
 export type { default as Parents } from './parents'
 export type { default as PositionalInfo } from './positional-info'
 export type { default as Test } from './test'
