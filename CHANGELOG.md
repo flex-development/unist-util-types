@@ -1,3 +1,28 @@
+## [1.4.0](https://github.com/flex-development/unist-util-types/compare/1.3.1...1.4.0) (2024-05-05)
+
+### :package: Build
+
+- [[`b6bf187`](https://github.com/flex-development/unist-util-types/commit/b6bf18713e0593633ef6d46f2959ff95ffbc92f7)] **deps-dev:** Bump @flex-development/docast from 1.0.0-alpha.16 to 1.0.0-alpha.17 in the flex-development group ([#62](https://github.com/flex-development/unist-util-types/issues/62))
+- [[`5d48c04`](https://github.com/flex-development/unist-util-types/commit/5d48c0458b246849d91fc09907778f1375ed41f0)] **deps-dev:** bump @types/eslint from 8.56.5 to 8.56.10
+- [[`94ff66c`](https://github.com/flex-development/unist-util-types/commit/94ff66c2fb1e556adcfd2b0c9967b4bf1abb5794)] **deps-dev:** bump @types/node from 20.11.26 to 20.12.8
+- [[`0888d73`](https://github.com/flex-development/unist-util-types/commit/0888d736fa2172935914a8f3dbe51515a0d38640)] **deps-dev:** bump cspell from 8.7.0 to 8.8.0
+- [[`764d31e`](https://github.com/flex-development/unist-util-types/commit/764d31e53d7a860adcfe03f196cd883b8be5ab88)] **deps-dev:** Bump eslint-plugin-markdown from 4.0.1 to 5.0.0 ([#68](https://github.com/flex-development/unist-util-types/issues/68))
+- [[`38a3bd2`](https://github.com/flex-development/unist-util-types/commit/38a3bd286a502a15c85302640706a05886eee890)] **deps-dev:** Bump the typescript-eslint group with 2 updates ([#65](https://github.com/flex-development/unist-util-types/issues/65))
+- [[`37dffb4`](https://github.com/flex-development/unist-util-types/commit/37dffb48140e92bac06380b27773daea8da1a9d3)] **deps-dev:** bump the vitest group from 1.5.3 to 1.6.0
+- [[`5b8548a`](https://github.com/flex-development/unist-util-types/commit/5b8548a6bfa18c47f7759af349d20dc5ce846096)] **deps-dev:** Bump the vitest group with 2 updates ([#64](https://github.com/flex-development/unist-util-types/issues/64))
+- [[`01c3945`](https://github.com/flex-development/unist-util-types/commit/01c3945838b5af405aa5b404c45ce0cb3a54f01e)] **deps-dev:** Bump the vitest group with 2 updates ([#66](https://github.com/flex-development/unist-util-types/issues/66))
+- [[`d1fa2be`](https://github.com/flex-development/unist-util-types/commit/d1fa2be54c518ddd5df986b1a4659f4475dfa0a1)] **deps-dev:** bump typescript from 5.4.5 to 5.5.0-beta
+- [[`92b5f24`](https://github.com/flex-development/unist-util-types/commit/92b5f2498a6665fc6284b9a73a91bdff56986157)] **yarn:** bump yarn from 4.1.0 to 4.2.1
+
+### :robot: Continuous Integration
+
+- [[`eb7b7d6`](https://github.com/flex-development/unist-util-types/commit/eb7b7d6d9fd265f9313edb36060b8cec51cded77)] **deps:** Bump actions/checkout from 4.1.3 to 4.1.4 ([#63](https://github.com/flex-development/unist-util-types/issues/63))
+- [[`d097311`](https://github.com/flex-development/unist-util-types/commit/d097311b1b501ec0f96fb7934a382a8aff4e37ed)] **deps:** Bump actions/create-github-app-token from 1.9.3 to 1.10.0 ([#67](https://github.com/flex-development/unist-util-types/issues/67))
+
+### :sparkles: Features
+
+- [[`61269c3`](https://github.com/flex-development/unist-util-types/commit/61269c3b1d870b2d3679307133640e8845f7c683)] `Offset`
+
 ## [1.3.1](https://github.com/flex-development/unist-util-types/compare/1.3.0...1.3.1) (2024-04-24)
 
 ### :package: Build
@@ -116,6 +141,7 @@
 ### :white_check_mark: Testing
 
 - [[`8b4189d`](https://github.com/flex-development/unist-util-types/commit/8b4189d42a45502218e1d17361ed4b4fcd417068)] [`Decrement`] fix test file name
+
 
 
 
