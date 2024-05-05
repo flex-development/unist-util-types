@@ -1667,7 +1667,7 @@ __metadata:
     "@types/eslint": "npm:8.56.10"
     "@types/is-ci": "npm:3.0.4"
     "@types/mdast": "npm:4.0.3"
-    "@types/node": "npm:20.11.26"
+    "@types/node": "npm:20.12.8"
     "@types/node-notifier": "npm:8.0.5"
     "@types/unist": "npm:3.0.2"
     "@typescript-eslint/eslint-plugin": "npm:7.8.0"
@@ -2295,12 +2295,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:20.11.26, @types/node@npm:^20.0.0":
-  version: 20.11.26
-  resolution: "@types/node@npm:20.11.26"
+"@types/node@npm:*, @types/node@npm:20.12.8, @types/node@npm:^20.0.0":
+  version: 20.12.8
+  resolution: "@types/node@npm:20.12.8"
   dependencies:
     undici-types: "npm:~5.26.4"
-  checksum: 10/37a69017fc0e70bd52e106a7a0de21f78b29a869b2ab7b0539438ee6ce91cb9b49b80d6b68108e88fcc20e24cdc4dc00f6e8e1c28215d93412cb19a303572130
+  checksum: 10/1feab4c8cb08588eea10811ed4d02485a5cde47fdf92e7b3193fc9f8ee39ea556f6e3124dc6d5378354466ed5f7e5fbe5e20f625908de40ea37560368a50f72c
   languageName: node
   linkType: hard
 
