@@ -10,7 +10,6 @@ fbca
 ggshield
 gpgsign
 hmarr
-iife
 jchen
 kaisugi
 lintstagedrc
