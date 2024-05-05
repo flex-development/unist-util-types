@@ -120,7 +120,7 @@
     "sh-syntax": "0.4.2",
     "trash-cli": "5.0.0",
     "ts-dedent": "2.2.0",
-    "typescript": "5.4.5",
+    "typescript": "5.5.0-beta",
     "vitest": "1.5.3",
     "yaml-eslint-parser": "1.2.2"
   },
