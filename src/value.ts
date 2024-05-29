@@ -6,7 +6,7 @@
 import type { Literal, Node } from 'unist'
 
 /**
- * Extract the value of from [*tree*][1] `T`.
+ * Extract the value of [*tree*][1] `T`.
  *
  * [1]: https://github.com/syntax-tree/unist#tree
  *

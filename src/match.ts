@@ -18,19 +18,19 @@ import type Type from './type'
  * @see {@linkcode Test}
  *
  * @template {Node} [N=Node] - Node to check
- * @template {Test} [T=Test] - Node test
+ * @template {Test} [Check=Test] - Node test
  */
-type MatchOne<N extends Node, T extends Test> = // dprint-ignore
-  T extends null | undefined
+type MatchOne<N extends Node, Check extends Test> = // dprint-ignore
+  Check extends null | undefined
     ? N
-    : N extends { type: T }
+    : N extends { type: Check }
       ? N
-      : N extends T
+      : N extends Check
         ? N
-        : T extends Type<N>
+        : Check extends Type<N>
           ? N
-          : T extends (...args: any[]) => any
-            ? T extends (value: any) => value is infer U
+          : Check extends (...args: any[]) => any
+            ? Check extends (value: any) => value is infer U
               ? U extends N
                 ? U
                 : never
@@ -63,10 +63,10 @@ type MatchOne<N extends Node, T extends Test> = // dprint-ignore
  *  // mdast.Nodes
  *
  * @template {Node} [N=Node] - Node to check
- * @template {Test} [T=Test] - Node test
+ * @template {Test} [Check=Test] - Node test
  */
-type Match<N extends Node, T extends Test> = T extends any[]
-  ? MatchOne<N, T[number]>
-  : MatchOne<N, T>
+type Match<N extends Node, Check extends Test> = Check extends any[]
+  ? MatchOne<N, Check[number]>
+  : MatchOne<N, Check>
 
 export type { Match as default }

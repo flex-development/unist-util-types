@@ -47,15 +47,15 @@ describe('unit-d:Match', () => {
     typeExpression = 'typeExpression'
   }
 
-  describe('T extends (...args: any[]) => any', () => {
+  describe('Check extends (...args: any[]) => any', () => {
     type N = docast.Description | docast.DescriptionContent
 
-    it('should equal N if T is not type guard', () => {
+    it('should equal N if Check is not type guard', () => {
       expectTypeOf<TestSubject<N, TestFunction>>().toEqualTypeOf<N>()
     })
 
-    describe('T extends (value: any) => value is infer U', () => {
-      it('should extract type constituents of N that match U', () => {
+    describe('Check extends (value: any) => value is infer U', () => {
+      it('should extract constituents of N that match U', () => {
         // Arrange
         type T = (v: unknown) => v is docast.BlockTag | docast.InlineTag
 
@@ -65,10 +65,10 @@ describe('unit-d:Match', () => {
     })
   })
 
-  describe('T extends (Node | TestFunction | Type)[]', () => {
+  describe('Check extends (Node | TestFunction | Type)[]', () => {
     type N = InclusiveDescendant<docast.Root>
 
-    it('should extract all matching type constituents of N', () => {
+    it('should extract all matching constituents of N', () => {
       // Arrange
       type T = (
         | docast.BlockTag
@@ -86,8 +86,8 @@ describe('unit-d:Match', () => {
     })
   })
 
-  describe('T extends Node', () => {
-    it('should extract type constituents of N that extend T', () => {
+  describe('Check extends Node', () => {
+    it('should extract constituents of N that extend Check', () => {
       // Arrange
       type T = mdast.Break | mdast.Text
 
@@ -96,8 +96,8 @@ describe('unit-d:Match', () => {
     })
   })
 
-  describe('T extends Type', () => {
-    it('should extract type constituents of N that extend { type: T }', () => {
+  describe('Check extends Type', () => {
+    it('should extract constituents of N that extend { type: Check }', () => {
       // Arrange
       type T = 'code' | 'inlineCode'
       type Expect = mdast.Code | mdast.InlineCode
@@ -106,7 +106,7 @@ describe('unit-d:Match', () => {
       expectTypeOf<TestSubject<mdast.Nodes, T>>().toEqualTypeOf<Expect>()
     })
 
-    it('should extract type constituents of N where T extends Type<N>', () => {
+    it('should extract constituents of N where Check extends Type<N>', () => {
       // Arrange
       type T = types.code | types.inlineCode
       type Expect = mdast.Code | mdast.InlineCode
@@ -116,7 +116,7 @@ describe('unit-d:Match', () => {
     })
   })
 
-  describe('T extends null', () => {
+  describe('Check extends null', () => {
     it('should equal N', () => {
       // Arrange
       type N = docast.DocastNode
@@ -126,7 +126,7 @@ describe('unit-d:Match', () => {
     })
   })
 
-  describe('T extends undefined', () => {
+  describe('Check extends undefined', () => {
     it('should equal N', () => {
       // Arrange
       type N = mdast.Nodes

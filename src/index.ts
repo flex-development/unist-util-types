@@ -14,9 +14,12 @@ export type { default as IsAncestor } from './is-ancestor'
 export type { default as IsParent } from './is-parent'
 export type { default as Line } from './line'
 export type { default as Match } from './match'
+export type { default as MatchChildren } from './match-children'
 export type {
   default as MatchInclusiveDescendant
 } from './match-descendant-inclusive'
+export type { default as MatchProperties } from './match-properties'
+export type { default as MatchValue } from './match-value'
 export type { default as Offset } from './offset'
 export type { default as Parents } from './parents'
 export type { default as PositionalInfo } from './positional-info'

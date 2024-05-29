@@ -27,8 +27,11 @@
   - [`IsAncestor<Tree, Child[, Max][, Depth]>`](#isancestortree-child-max-depth)
   - [`IsParent<Tree, Child>`](#isparenttree-child)
   - [`Line`](#line)
-  - [`Match<N, T>`](#matchn-t)
+  - [`Match<N, Check>`](#matchn-check)
+  - [`MatchChildren<N[, Check]>`](#matchchildrenn-check)
   - [`MatchInclusiveDescendant<Tree, Check[, Max]>`](#matchinclusivedescendanttree-check-max)
+  - [`MatchProperties<N[, Check]>`](#matchpropertiesn-check)
+  - [`MatchValue<N[, Check]>`](#matchvaluen-check)
   - [`Offset`](#offset)
   - [`Parents<Tree[, Child]>`](#parentstree-child)
   - [`PositionalInfo<[T]>`](#positionalinfot)
@@ -73,7 +76,10 @@ import type {
   Index,
   Line,
   Match,
+  MatchChildren,
   MatchInclusiveDescendant,
+  MatchProperties,
+  MatchValue,
   Offset,
   Parents,
   PositionalInfo,
@@ -173,14 +179,24 @@ Line in a source [*file*][file] (`1`-indexed integer).
 
 > **source**: [`src/line.ts`](src/line.ts)
 
-### `Match<N, T>`
+### `Match<N, Check>`
 
 Check if node `N` passes a [test](#test).
 
 - `N` ([**`Node`**][node]): node to check
-- `T` ([**`Test`**](#test)): node test
+- `Check` ([**`Test`**](#test)): node test
 
 > **source**: [`src/match.ts`](src/match.ts)
+
+### `MatchChildren<N[, Check]>`
+
+Extract [*children*][child] from node `N` if it passes a [test](#test).
+
+- `N` ([**`Node`**][node]): node to check
+- `Check` ([**`Test`**](#test)): node test
+  - **default**: [`Test`](#test)
+
+> **source**: [`src/match-children.ts`](src/match-children.ts)
 
 ### `MatchInclusiveDescendant<Tree, Check[, Max]>`
 
@@ -192,6 +208,28 @@ Check if [*inclusive descendants*][descendant] of [`Tree`][tree] pass a test.
   - **default**: `10`
 
 > **source**: [`src/src/match-descendant-inclusive.ts`](src/src/match-descendant-inclusive.ts)
+
+### `MatchProperties<N[, Check]>`
+
+Extract properties of node `N` if it passes a [test](#test).
+
+Properties of `N` are all fields except `type`.
+
+- `N` ([**`Node`**][node]): node to check
+- `Check` ([**`Test`**](#test)): node test
+  - **default**: [`Test`](#test)
+
+> **source**: [`src/match-properties.ts`](src/match-properties.ts)
+
+### `MatchValue<N[, Check]>`
+
+Extract the [`value`][literal] of node `N` if it passes a [test](#test).
+
+- `N` ([**`Node`**][node]): node to check
+- `Check` ([**`Test`**](#test)): node test
+  - **default**: [`Test`](#test)
+
+> **source**: [`src/match-value.ts`](src/match-value.ts)
 
 ### `Offset`
 
@@ -275,7 +313,7 @@ Range: `[0, 10]`
 Extract the `value` of [*tree*][tree] `T`.
 
 - `T` ([**`Node`**][node]): tree to extract value from
-  - **default**: [`Literal`][node]
+  - **default**: [`Literal`][literal]
 
 > **source**: [`src/value.ts`](src/value.ts)
 
@@ -291,6 +329,7 @@ community you agree to abide by its terms.
 [descendant]: https://github.com/syntax-tree/unist#descendant
 [esm]: https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c
 [file]: https://github.com/syntax-tree/unist#file
+[literal]: https://github.com/syntax-tree/unist#literal
 [node]: https://github.com/syntax-tree/unist#node
 [parent]: https://github.com/syntax-tree/unist#parent
 [positional-information]: https://github.com/syntax-tree/unist#positional-information
