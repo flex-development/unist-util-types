@@ -1,3 +1,9 @@
+## [1.6.0](https://github.com/flex-development/unist-util-types/compare/1.5.0...1.6.0) (2024-05-28)
+
+### :sparkles: Features
+
+- [[`2c88ebf`](https://github.com/flex-development/unist-util-types/commit/2c88ebf96ec4707daf5fff8098a1e3d9b18c7de7)] `MatchChildren`, `MatchProperties`, `MatchValue`
+
 ## [1.5.0](https://github.com/flex-development/unist-util-types/compare/1.4.0...1.5.0) (2024-05-28)
 
 ### :package: Build
@@ -179,6 +185,7 @@
 ### :white_check_mark: Testing
 
 - [[`8b4189d`](https://github.com/flex-development/unist-util-types/commit/8b4189d42a45502218e1d17361ed4b4fcd417068)] [`Decrement`] fix test file name
+
 
 
 
