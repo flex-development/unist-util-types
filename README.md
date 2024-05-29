@@ -19,15 +19,17 @@
 - [API](#api)
   - [`Ancestor<Tree, Child>`](#ancestortree-child)
   - [`Children<T>`](#childrent)
+  - [`Column`](#column)
   - [`Decrement<[I]>`](#decrementi)
   - [`InclusiveDescendant<Tree[, Max][, Depth]>`](#inclusivedescendanttree-max-depth)
   - [`Increment<[I]>`](#incrementi)
   - [`Index`](#index)
   - [`IsAncestor<Tree, Child[, Max][, Depth]>`](#isancestortree-child-max-depth)
   - [`IsParent<Tree, Child>`](#isparenttree-child)
-  - [`Offset`](#offset)
+  - [`Line`](#line)
   - [`Match<N, T>`](#matchn-t)
   - [`MatchInclusiveDescendant<Tree, Check[, Max]>`](#matchinclusivedescendanttree-check-max)
+  - [`Offset`](#offset)
   - [`Parents<Tree[, Child]>`](#parentstree-child)
   - [`PositionalInfo<[T]>`](#positionalinfot)
   - [`Test`](#test)
@@ -66,11 +68,13 @@ yarn add -D @flex-development/unist-util-types @types/unist
 import type {
   Ancestor,
   Children,
+  Column,
   InclusiveDescendant,
   Index,
-  Offset,
+  Line,
   Match,
   MatchInclusiveDescendant,
+  Offset,
   Parents,
   PositionalInfo,
   Test,
@@ -98,6 +102,12 @@ Extract [*children*][child] from [*tree*][tree] `T`.
 - `T` ([**`Node`**][node]): tree to extract children from
 
 > **source**: [`src/children.ts`](src/children.ts)
+
+### `Column`
+
+Column in a source [*file*][file] (`1`-indexed integer).
+
+> **source**: [`src/column.ts`](src/column.ts)
 
 ### `Decrement<[I]>`
 
@@ -157,6 +167,12 @@ Check if [`Tree`][tree] is the [*parent*][parent] of [`Child`][child].
 
 > **source**: [`src/is-parent.ts`](src/is-parent.ts)
 
+### `Line`
+
+Line in a source [*file*][file] (`1`-indexed integer).
+
+> **source**: [`src/line.ts`](src/line.ts)
+
 ### `Match<N, T>`
 
 Check if node `N` passes a [test](#test).
@@ -179,7 +195,7 @@ Check if [*inclusive descendants*][descendant] of [`Tree`][tree] pass a test.
 
 ### `Offset`
 
-Index of a character in a source [*file*][file].
+Index of a character in a source [*file*][file] (`0`-indexed integer).
 
 > **source**: [`src/offset.ts`](src/offset.ts)
 

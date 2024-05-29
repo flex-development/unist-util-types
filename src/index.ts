@@ -5,12 +5,14 @@
 
 export type { default as Ancestor } from './ancestor'
 export type { default as Children } from './children'
+export type { default as Column } from './column'
 export type { default as Decrement } from './decrement'
 export type { default as InclusiveDescendant } from './descendant-inclusive'
 export type { default as Increment } from './increment'
 export type { default as Index } from './index-number'
 export type { default as IsAncestor } from './is-ancestor'
 export type { default as IsParent } from './is-parent'
+export type { default as Line } from './line'
 export type { default as Match } from './match'
 export type {
   default as MatchInclusiveDescendant
