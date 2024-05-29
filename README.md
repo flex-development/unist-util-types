@@ -35,6 +35,7 @@
     - [`fn(node[, index][, parent])`](#fnnode-index-parent)
   - [`Type<[T]>`](#typet)
   - [`Uint`](#uint)
+  - [`Value<[T]>`](#valuet)
 - [Contribute](#contribute)
 
 ## What is this?
@@ -74,7 +75,8 @@ import type {
   PositionalInfo,
   Test,
   TestFunction,
-  Type
+  Type,
+  Value
 } from '@flex-development/unist-util-types'
 ```
 
@@ -251,6 +253,15 @@ Number used for iteration.
 Range: `[0, 10]`
 
 > **source**: [`src/uint.ts`](src/uint.ts)
+
+### `Value<[T]>`
+
+Extract the `value` of [*tree*][tree] `T`.
+
+- `T` ([**`Node`**][node]): tree to extract value from
+  - **default**: [`Literal`][node]
+
+> **source**: [`src/value.ts`](src/value.ts)
 
 ## Contribute
 
