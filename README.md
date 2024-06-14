@@ -55,7 +55,7 @@ This package is [ESM only][esm].
 In Node.js (version 18+) with [yarn][yarn]:
 
 ```sh
-yarn add -D @flex-development/unist-util-types @types/unist
+yarn add @flex-development/unist-util-types
 ```
 
 <blockquote>

@@ -63,6 +63,9 @@
     "typecheck": "vitest run --mode=typecheck --typecheck",
     "typecheck:watch": "vitest --mode=typecheck --typecheck"
   },
+  "dependencies": {
+    "@types/unist": "3.0.2"
+  },
   "devDependencies": {
     "@arethetypeswrong/cli": "0.15.3",
     "@commitlint/cli": "19.3.0",
@@ -123,12 +126,6 @@
     "typescript": "5.5.0-beta",
     "vitest": "1.6.0",
     "yaml-eslint-parser": "1.2.3"
-  },
-  "peerDependencies": {
-    "@types/unist": ">=3.0.2"
-  },
-  "resolutions": {
-    "@types/unist": "3.0.2"
   },
   "engines": {
     "node": ">=18.18.2"
