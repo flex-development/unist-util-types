@@ -1,3 +1,30 @@
+## [1.6.1](https://github.com/flex-development/unist-util-types/compare/1.6.0...1.6.1) (2024-06-14)
+
+### :package: Build
+
+- [[`48fa340`](https://github.com/flex-development/unist-util-types/commit/48fa340ad650b9c4bd19a15fdd6b6de8c3212355)] **deps-dev:** Bump cspell from 8.8.3 to 8.8.4 ([#127](https://github.com/flex-development/unist-util-types/issues/127))
+- [[`9894997`](https://github.com/flex-development/unist-util-types/commit/98949971b63b9de4a351a1d787f8b6ac227f6b55)] **deps-dev:** Bump dprint from 0.46.1 to 0.46.2 ([#132](https://github.com/flex-development/unist-util-types/issues/132))
+- [[`e334073`](https://github.com/flex-development/unist-util-types/commit/e3340737a977457aa04e052557909718a26b4c25)] **deps-dev:** Bump esbuild from 0.21.4 to 0.21.5 ([#131](https://github.com/flex-development/unist-util-types/issues/131))
+- [[`4964a4a`](https://github.com/flex-development/unist-util-types/commit/4964a4a579b7a309d3ed287e638ac3eeb2422d7d)] **deps-dev:** Bump eslint-plugin-chai-expect from 3.0.0 to 3.1.0 ([#136](https://github.com/flex-development/unist-util-types/issues/136))
+- [[`9d58aa5`](https://github.com/flex-development/unist-util-types/commit/9d58aa5a6158316cf87c765436adf60ec0a84766)] **deps-dev:** Bump eslint-plugin-jsdoc from 48.2.6 to 48.2.7 ([#119](https://github.com/flex-development/unist-util-types/issues/119))
+- [[`3fcabf3`](https://github.com/flex-development/unist-util-types/commit/3fcabf3f6aa41cca72f1d1fb3470dc3987da3401)] **deps-dev:** Bump eslint-plugin-jsdoc from 48.2.7 to 48.2.8 ([#129](https://github.com/flex-development/unist-util-types/issues/129))
+- [[`b2f5a16`](https://github.com/flex-development/unist-util-types/commit/b2f5a16ba0ba22bad950ce9032f9730f4cb13974)] **deps-dev:** Bump eslint-plugin-jsdoc from 48.2.8 to 48.2.9 ([#130](https://github.com/flex-development/unist-util-types/issues/130))
+- [[`7534d44`](https://github.com/flex-development/unist-util-types/commit/7534d44fc17bc39d0b6e0d5a352e5924d5ffb151)] **deps-dev:** Bump eslint-plugin-jsdoc from 48.2.9 to 48.2.12 ([#139](https://github.com/flex-development/unist-util-types/issues/139))
+- [[`6b6d269`](https://github.com/flex-development/unist-util-types/commit/6b6d269fef431f0e8c46266fbed713a77c04c257)] **deps-dev:** Bump lint-staged from 15.2.5 to 15.2.6 ([#135](https://github.com/flex-development/unist-util-types/issues/135))
+- [[`cd8a54d`](https://github.com/flex-development/unist-util-types/commit/cd8a54d6d1edb85c45d3d1c7a9c10f82437d7b47)] **deps-dev:** Bump lint-staged from 15.2.6 to 15.2.7 ([#137](https://github.com/flex-development/unist-util-types/issues/137))
+- [[`f71ed72`](https://github.com/flex-development/unist-util-types/commit/f71ed72b3ae11ef6fcd9c2116afca71a0a2db2fa)] **deps-dev:** Bump prettier from 3.2.5 to 3.3.0 ([#123](https://github.com/flex-development/unist-util-types/issues/123))
+- [[`60328d0`](https://github.com/flex-development/unist-util-types/commit/60328d0bb2a700ea859ac9ce544ff7ceb8d4dea6)] **deps-dev:** Bump prettier from 3.3.0 to 3.3.1 ([#128](https://github.com/flex-development/unist-util-types/issues/128))
+- [[`798ff0f`](https://github.com/flex-development/unist-util-types/commit/798ff0f22c747f1d4ea242e0b1725ec20ada72b5)] **deps-dev:** Bump prettier from 3.3.1 to 3.3.2 ([#134](https://github.com/flex-development/unist-util-types/issues/134))
+- [[`9bc0539`](https://github.com/flex-development/unist-util-types/commit/9bc0539514492700e2a33ec39a0c3263af5ffbe9)] **deps-dev:** Bump the typescript-eslint group with 2 updates ([#126](https://github.com/flex-development/unist-util-types/issues/126))
+- [[`ba2c014`](https://github.com/flex-development/unist-util-types/commit/ba2c01473473c10523e6b53d38c36b43c9138d2b)] **deps-dev:** Bump the typescript-eslint group with 2 updates ([#133](https://github.com/flex-development/unist-util-types/issues/133))
+- [[`fbc4b6f`](https://github.com/flex-development/unist-util-types/commit/fbc4b6f11b12aeb13d4f1c808db3ead4113d9cb9)] **deps:** add @types/unist
+- [[`b21933e`](https://github.com/flex-development/unist-util-types/commit/b21933e8e25bb32c178885fd3e6f99fde2cf4f87)] **yarn:** bump yarn from 4.2.1 to 4.3.0
+
+### :robot: Continuous Integration
+
+- [[`a1a373c`](https://github.com/flex-development/unist-util-types/commit/a1a373cc2198196675d9d7dbbf957e166fc7d424)] **deps:** Bump actions/checkout from 4.1.6 to 4.1.7 ([#138](https://github.com/flex-development/unist-util-types/issues/138))
+- [[`57cfb21`](https://github.com/flex-development/unist-util-types/commit/57cfb2178dd2f94a0ddb44917058a401b41c8066)] **deps:** Bump actions/create-github-app-token from 1.10.0 to 1.10.1 ([#125](https://github.com/flex-development/unist-util-types/issues/125))
+
 ## [1.6.0](https://github.com/flex-development/unist-util-types/compare/1.5.0...1.6.0) (2024-05-28)
 
 ### :sparkles: Features
@@ -185,6 +212,7 @@
 ### :white_check_mark: Testing
 
 - [[`8b4189d`](https://github.com/flex-development/unist-util-types/commit/8b4189d42a45502218e1d17361ed4b4fcd417068)] [`Decrement`] fix test file name
+
 
 
 
