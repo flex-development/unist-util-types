@@ -90,7 +90,7 @@
     "@vates/toggle-scripts": "1.0.0",
     "@vitest/coverage-v8": "2.0.3",
     "cross-env": "7.0.3",
-    "cspell": "8.10.4",
+    "cspell": "8.11.0",
     "dprint": "0.47.2",
     "editorconfig": "2.0.0",
     "esbuild": "0.23.0",
